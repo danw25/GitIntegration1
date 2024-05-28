@@ -1,0 +1,4425 @@
+{
+  "compatibilityLevel": 1465,
+  "model": {
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.75.5649.961 (19.11)"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": "<LinguisticMetadata><LinguisticSchema Language=\"en-US\" DynamicImprovement=\"HighConfidence\" xmlns=\"http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema\" /></LinguisticMetadata>"
+        }
+      }
+    ],
+    "dataSources": [
+      {
+        "name": "b448e40d-68b7-45c5-ac2e-ad997f57eff3",
+        "connectionString": "data source=jxkt4xphz2.database.windows.net;initial catalog=\"Adventure Works DW Tabular Denali CTP3\";persist security info=True;encrypt=True;trustservercertificate=False",
+        "impersonationMode": "impersonateCurrentUser",
+        "provider": "System.Data.SqlClient"
+      }
+    ],
+    "relationships": [
+      {
+        "name": "a399f085-2a5b-496f-bead-502eb6a6ea15",
+        "fromColumn": "GeographyKey",
+        "fromTable": "DimCustomer",
+        "toColumn": "GeographyKey",
+        "toTable": "DimGeography"
+      },
+      {
+        "name": "439e0a18-4f54-4a64-bb55-08ab075a1eee",
+        "fromColumn": "CustomerKey",
+        "fromTable": "FactInternetSales",
+        "toColumn": "CustomerKey",
+        "toTable": "DimCustomer"
+      },
+      {
+        "name": "5064e220-b2c2-4c0f-a0d0-acc68d66d675",
+        "fromColumn": "DueDateKey",
+        "fromTable": "FactInternetSales",
+        "toColumn": "DateKey",
+        "toTable": "DimDate"
+      },
+      {
+        "name": "328cf2a1-04cb-4620-b2ae-06d690eddd28",
+        "fromColumn": "OrderDateKey",
+        "fromTable": "FactInternetSales",
+        "isActive": false,
+        "toColumn": "DateKey",
+        "toTable": "DimDate"
+      },
+      {
+        "name": "d7ca5786-5a1a-4657-8be2-6a12cd7fa3a2",
+        "fromColumn": "ShipDateKey",
+        "fromTable": "FactInternetSales",
+        "isActive": false,
+        "toColumn": "DateKey",
+        "toTable": "DimDate"
+      },
+      {
+        "name": "695a9e84-8fb6-4aba-bf35-1f6f22e2e60d",
+        "fromColumn": "ProductSubcategoryKey",
+        "fromTable": "DimProduct",
+        "toColumn": "ProductSubcategoryKey",
+        "toTable": "DimProductSubcategory"
+      },
+      {
+        "name": "7e284c27-8e4d-40e0-aa99-94f560f7e35a",
+        "fromColumn": "ProductKey",
+        "fromTable": "FactInternetSales",
+        "toColumn": "ProductKey",
+        "toTable": "DimProduct"
+      },
+      {
+        "name": "67181781-8c1e-4317-adb2-33180fc908dc",
+        "fromColumn": "ProductCategoryKey",
+        "fromTable": "DimProductSubcategory",
+        "toColumn": "ProductCategoryKey",
+        "toTable": "DimProductCategory"
+      }
+    ],
+    "roles": [
+      {
+        "name": "AU",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "3d000eeacfb34fbdb223362ea8904764"
+          }
+        ],
+        "modelPermission": "read",
+        "tablePermissions": [
+          {
+            "name": "DimGeography",
+            "filterExpression": "[CountryRegionCode] = \"AU\""
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "DimCustomer",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "e93624db-ae71-4cd5-8f08-115fcd9fb39a"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "DimCustomer"
+          },
+          {
+            "name": "PBI_QueryRelationships",
+            "value": "{\"columnCount\":29,\"keyColumnNames\":[\"CustomerKey\"],\"queryRelationships\":[{\"keyColumnCount\":1,\"keyColumn\":1,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{GeographyKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{CustomerKey,4}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactSurveyResponse.{CustomerKey,2}\",\"KeyColumnCount\":1}],\"columnIdentities\":[\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{CustomerKey,0}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{GeographyKey,1}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{CustomerAlternateKey,2}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{Title,3}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{FirstName,4}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{MiddleName,5}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{LastName,6}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{NameStyle,7}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{BirthDate,8}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{MaritalStatus,9}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{Suffix,10}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{Gender,11}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{EmailAddress,12}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{YearlyIncome,13}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{TotalChildren,14}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{NumberChildrenAtHome,15}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{EnglishEducation,16}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{SpanishEducation,17}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{FrenchEducation,18}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{EnglishOccupation,19}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{SpanishOccupation,20}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{FrenchOccupation,21}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{HouseOwnerFlag,22}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{NumberCarsOwned,23}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{AddressLine1,24}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{AddressLine2,25}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{Phone,26}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{DateFirstPurchase,27}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{CommuteDistance,28}\"],\"ColumnCount\":29,\"KeyColumnNames\":[\"CustomerKey\"],\"ColumnIdentities\":[\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{CustomerKey,0}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{GeographyKey,1}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{CustomerAlternateKey,2}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{Title,3}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{FirstName,4}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{MiddleName,5}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{LastName,6}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{NameStyle,7}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{BirthDate,8}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{MaritalStatus,9}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{Suffix,10}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{Gender,11}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{EmailAddress,12}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{YearlyIncome,13}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{TotalChildren,14}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{NumberChildrenAtHome,15}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{EnglishEducation,16}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{SpanishEducation,17}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{FrenchEducation,18}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{EnglishOccupation,19}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{SpanishOccupation,20}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{FrenchOccupation,21}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{HouseOwnerFlag,22}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{NumberCarsOwned,23}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{AddressLine1,24}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{AddressLine2,25}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{Phone,26}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{DateFirstPurchase,27}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{CommuteDistance,28}\"],\"RelationshipInfo\":[{\"keyColumnCount\":1,\"keyColumn\":1,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{GeographyKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{CustomerKey,4}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactSurveyResponse.{CustomerKey,2}\",\"KeyColumnCount\":1}]}"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "CustomerKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "CustomerKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "CustomerKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GeographyKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "GeographyKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "GeographyKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CustomerAlternateKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "CustomerAlternateKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "CustomerAlternateKey",
+            "sourceProviderType": "nvarchar(15)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Title",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Title"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Title",
+            "sourceProviderType": "nvarchar(8)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FirstName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FirstName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "FirstName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MiddleName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "MiddleName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "MiddleName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "LastName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "LastName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "LastName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NameStyle",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Boolean\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Boolean#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "NameStyle"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "sourceColumn": "NameStyle",
+            "sourceProviderType": "bit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "BirthDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"LongDate\" FormatString=\"dddd, MMMM d, yyyy\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####Date"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "BirthDate"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dddd\\, mmmm d\\, yyyy",
+            "sourceColumn": "BirthDate",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MaritalStatus",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "MaritalStatus"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "MaritalStatus",
+            "sourceProviderType": "nchar",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Suffix",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Suffix"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Suffix",
+            "sourceProviderType": "nvarchar(10)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Gender",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Gender"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Gender",
+            "sourceProviderType": "nvarchar(1)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EmailAddress",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "EmailAddress"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "EmailAddress",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "YearlyIncome",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "YearlyIncome"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "sourceColumn": "YearlyIncome",
+            "sourceProviderType": "money",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TotalChildren",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "TotalChildren"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "TotalChildren",
+            "sourceProviderType": "tinyint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NumberChildrenAtHome",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "NumberChildrenAtHome"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "NumberChildrenAtHome",
+            "sourceProviderType": "tinyint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "EnglishEducation",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "EnglishEducation"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "EnglishEducation",
+            "sourceProviderType": "nvarchar(40)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SpanishEducation",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SpanishEducation"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "SpanishEducation",
+            "sourceProviderType": "nvarchar(40)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FrenchEducation",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FrenchEducation"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "FrenchEducation",
+            "sourceProviderType": "nvarchar(40)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EnglishOccupation",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "EnglishOccupation"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "EnglishOccupation",
+            "sourceProviderType": "nvarchar(100)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SpanishOccupation",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SpanishOccupation"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "SpanishOccupation",
+            "sourceProviderType": "nvarchar(100)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FrenchOccupation",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FrenchOccupation"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "FrenchOccupation",
+            "sourceProviderType": "nvarchar(100)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "HouseOwnerFlag",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "HouseOwnerFlag"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "HouseOwnerFlag",
+            "sourceProviderType": "nchar",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NumberCarsOwned",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "NumberCarsOwned"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "NumberCarsOwned",
+            "sourceProviderType": "tinyint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "AddressLine1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "AddressLine1"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "AddressLine1",
+            "sourceProviderType": "nvarchar(120)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "AddressLine2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "AddressLine2"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "AddressLine2",
+            "sourceProviderType": "nvarchar(120)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Phone",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Phone"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Phone",
+            "sourceProviderType": "nvarchar(20)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DateFirstPurchase",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"LongDate\" FormatString=\"dddd, MMMM d, yyyy\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####Date"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "DateFirstPurchase"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dddd\\, mmmm d\\, yyyy",
+            "sourceColumn": "DateFirstPurchase",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CommuteDistance",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "CommuteDistance"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "CommuteDistance",
+            "sourceProviderType": "nvarchar(15)",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimCustomer-9acc1cfa-b7d5-465e-b6ac-1e7776936598",
+            "mode": "directQuery",
+            "source": {
+              "dataSource": "b448e40d-68b7-45c5-ac2e-ad997f57eff3",
+              "query": [
+                "select [$Table].[CustomerKey] as [CustomerKey],",
+                "    [$Table].[GeographyKey] as [GeographyKey],",
+                "    [$Table].[CustomerAlternateKey] as [CustomerAlternateKey],",
+                "    [$Table].[Title] as [Title],",
+                "    [$Table].[FirstName] as [FirstName],",
+                "    [$Table].[MiddleName] as [MiddleName],",
+                "    [$Table].[LastName] as [LastName],",
+                "    [$Table].[NameStyle] as [NameStyle],",
+                "    [$Table].[BirthDate] as [BirthDate],",
+                "    [$Table].[MaritalStatus] as [MaritalStatus],",
+                "    [$Table].[Suffix] as [Suffix],",
+                "    [$Table].[Gender] as [Gender],",
+                "    [$Table].[EmailAddress] as [EmailAddress],",
+                "    [$Table].[YearlyIncome] as [YearlyIncome],",
+                "    [$Table].[TotalChildren] as [TotalChildren],",
+                "    [$Table].[NumberChildrenAtHome] as [NumberChildrenAtHome],",
+                "    [$Table].[EnglishEducation] as [EnglishEducation],",
+                "    [$Table].[SpanishEducation] as [SpanishEducation],",
+                "    [$Table].[FrenchEducation] as [FrenchEducation],",
+                "    [$Table].[EnglishOccupation] as [EnglishOccupation],",
+                "    [$Table].[SpanishOccupation] as [SpanishOccupation],",
+                "    [$Table].[FrenchOccupation] as [FrenchOccupation],",
+                "    [$Table].[HouseOwnerFlag] as [HouseOwnerFlag],",
+                "    [$Table].[NumberCarsOwned] as [NumberCarsOwned],",
+                "    [$Table].[AddressLine1] as [AddressLine1],",
+                "    [$Table].[AddressLine2] as [AddressLine2],",
+                "    [$Table].[Phone] as [Phone],",
+                "    [$Table].[DateFirstPurchase] as [DateFirstPurchase],",
+                "    [$Table].[CommuteDistance] as [CommuteDistance]",
+                "from [dbo].[DimCustomer] as [$Table]"
+              ],
+              "type": "query"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimDate",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "c20f718d-ca93-42b7-8f26-6fc6d4092881"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "DimDate"
+          },
+          {
+            "name": "PBI_QueryRelationships",
+            "value": "{\"columnCount\":19,\"keyColumnNames\":[\"DateKey\"],\"queryRelationships\":[{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactCallCenter.{DateKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactCurrencyRate.{DateKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactFinance.{DateKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{DueDateKey,2}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{OrderDateKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{ShipDateKey,3}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":1,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactProductInventory.{DateKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactResellerSales.{DueDateKey,2}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactResellerSales.{OrderDateKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactResellerSales.{ShipDateKey,3}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactSalesQuota.{DateKey,2}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactSurveyResponse.{DateKey,1}\",\"KeyColumnCount\":1}],\"columnIdentities\":[\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{DateKey,0}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{FullDateAlternateKey,1}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{DayNumberOfWeek,2}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{EnglishDayNameOfWeek,3}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{SpanishDayNameOfWeek,4}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{FrenchDayNameOfWeek,5}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{DayNumberOfMonth,6}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{DayNumberOfYear,7}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{WeekNumberOfYear,8}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{EnglishMonthName,9}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{SpanishMonthName,10}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{FrenchMonthName,11}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{MonthNumberOfYear,12}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{CalendarQuarter,13}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{CalendarYear,14}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{CalendarSemester,15}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{FiscalQuarter,16}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{FiscalYear,17}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{FiscalSemester,18}\"],\"ColumnCount\":19,\"KeyColumnNames\":[\"DateKey\"],\"ColumnIdentities\":[\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{DateKey,0}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{FullDateAlternateKey,1}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{DayNumberOfWeek,2}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{EnglishDayNameOfWeek,3}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{SpanishDayNameOfWeek,4}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{FrenchDayNameOfWeek,5}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{DayNumberOfMonth,6}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{DayNumberOfYear,7}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{WeekNumberOfYear,8}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{EnglishMonthName,9}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{SpanishMonthName,10}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{FrenchMonthName,11}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{MonthNumberOfYear,12}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{CalendarQuarter,13}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{CalendarYear,14}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{CalendarSemester,15}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{FiscalQuarter,16}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{FiscalYear,17}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{FiscalSemester,18}\"],\"RelationshipInfo\":[{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactCallCenter.{DateKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactCurrencyRate.{DateKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactFinance.{DateKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{DueDateKey,2}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{OrderDateKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{ShipDateKey,3}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":1,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactProductInventory.{DateKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactResellerSales.{DueDateKey,2}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactResellerSales.{OrderDateKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactResellerSales.{ShipDateKey,3}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactSalesQuota.{DateKey,2}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactSurveyResponse.{DateKey,1}\",\"KeyColumnCount\":1}]}"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "DateKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "DateKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "DateKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FullDateAlternateKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"LongDate\" FormatString=\"dddd, MMMM d, yyyy\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####Date"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FullDateAlternateKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "dddd\\, mmmm d\\, yyyy",
+            "isNullable": false,
+            "sourceColumn": "FullDateAlternateKey",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DayNumberOfWeek",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "DayNumberOfWeek"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "DayNumberOfWeek",
+            "sourceProviderType": "tinyint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EnglishDayNameOfWeek",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "EnglishDayNameOfWeek"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "EnglishDayNameOfWeek",
+            "sourceProviderType": "nvarchar(10)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SpanishDayNameOfWeek",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SpanishDayNameOfWeek"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "SpanishDayNameOfWeek",
+            "sourceProviderType": "nvarchar(10)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FrenchDayNameOfWeek",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FrenchDayNameOfWeek"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "FrenchDayNameOfWeek",
+            "sourceProviderType": "nvarchar(10)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DayNumberOfMonth",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "DayNumberOfMonth"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "DayNumberOfMonth",
+            "sourceProviderType": "tinyint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DayNumberOfYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "DayNumberOfYear"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "DayNumberOfYear",
+            "sourceProviderType": "smallint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "WeekNumberOfYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "WeekNumberOfYear"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "WeekNumberOfYear",
+            "sourceProviderType": "tinyint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EnglishMonthName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "EnglishMonthName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "EnglishMonthName",
+            "sourceProviderType": "nvarchar(10)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SpanishMonthName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SpanishMonthName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "SpanishMonthName",
+            "sourceProviderType": "nvarchar(10)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FrenchMonthName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FrenchMonthName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "FrenchMonthName",
+            "sourceProviderType": "nvarchar(10)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MonthNumberOfYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "MonthNumberOfYear"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "MonthNumberOfYear",
+            "sourceProviderType": "tinyint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CalendarQuarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "CalendarQuarter"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "CalendarQuarter",
+            "sourceProviderType": "tinyint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CalendarYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "CalendarYear"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "CalendarYear",
+            "sourceProviderType": "smallint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CalendarSemester",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "CalendarSemester"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "CalendarSemester",
+            "sourceProviderType": "tinyint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FiscalQuarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FiscalQuarter"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "FiscalQuarter",
+            "sourceProviderType": "tinyint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FiscalYear",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FiscalYear"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "FiscalYear",
+            "sourceProviderType": "smallint",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FiscalSemester",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FiscalSemester"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "FiscalSemester",
+            "sourceProviderType": "tinyint",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimDate-bfe12181-0164-4f5b-acc7-c523676001be",
+            "mode": "directQuery",
+            "source": {
+              "dataSource": "b448e40d-68b7-45c5-ac2e-ad997f57eff3",
+              "query": [
+                "select [$Table].[DateKey] as [DateKey],",
+                "    [$Table].[FullDateAlternateKey] as [FullDateAlternateKey],",
+                "    [$Table].[DayNumberOfWeek] as [DayNumberOfWeek],",
+                "    [$Table].[EnglishDayNameOfWeek] as [EnglishDayNameOfWeek],",
+                "    [$Table].[SpanishDayNameOfWeek] as [SpanishDayNameOfWeek],",
+                "    [$Table].[FrenchDayNameOfWeek] as [FrenchDayNameOfWeek],",
+                "    [$Table].[DayNumberOfMonth] as [DayNumberOfMonth],",
+                "    [$Table].[DayNumberOfYear] as [DayNumberOfYear],",
+                "    [$Table].[WeekNumberOfYear] as [WeekNumberOfYear],",
+                "    [$Table].[EnglishMonthName] as [EnglishMonthName],",
+                "    [$Table].[SpanishMonthName] as [SpanishMonthName],",
+                "    [$Table].[FrenchMonthName] as [FrenchMonthName],",
+                "    [$Table].[MonthNumberOfYear] as [MonthNumberOfYear],",
+                "    [$Table].[CalendarQuarter] as [CalendarQuarter],",
+                "    [$Table].[CalendarYear] as [CalendarYear],",
+                "    [$Table].[CalendarSemester] as [CalendarSemester],",
+                "    [$Table].[FiscalQuarter] as [FiscalQuarter],",
+                "    [$Table].[FiscalYear] as [FiscalYear],",
+                "    [$Table].[FiscalSemester] as [FiscalSemester]",
+                "from [dbo].[DimDate] as [$Table]"
+              ],
+              "type": "query"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimGeography",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "7c7ebf3d-192d-4ec8-be2e-353d3e8a7f94"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "DimGeography"
+          },
+          {
+            "name": "PBI_QueryRelationships",
+            "value": "{\"columnCount\":11,\"keyColumnNames\":[\"GeographyKey\"],\"queryRelationships\":[{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{GeographyKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimReseller.{GeographyKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":9,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimSalesTerritory.{SalesTerritoryKey,0}\",\"KeyColumnCount\":1}],\"columnIdentities\":[\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{GeographyKey,0}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{City,1}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{StateProvinceCode,2}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{StateProvinceName,3}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{CountryRegionCode,4}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{EnglishCountryRegionName,5}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{SpanishCountryRegionName,6}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{FrenchCountryRegionName,7}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{PostalCode,8}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{SalesTerritoryKey,9}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{IpAddressLocator,10}\"],\"ColumnCount\":11,\"KeyColumnNames\":[\"GeographyKey\"],\"ColumnIdentities\":[\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{GeographyKey,0}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{City,1}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{StateProvinceCode,2}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{StateProvinceName,3}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{CountryRegionCode,4}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{EnglishCountryRegionName,5}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{SpanishCountryRegionName,6}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{FrenchCountryRegionName,7}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{PostalCode,8}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{SalesTerritoryKey,9}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimGeography.{IpAddressLocator,10}\"],\"RelationshipInfo\":[{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{GeographyKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimReseller.{GeographyKey,1}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":9,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimSalesTerritory.{SalesTerritoryKey,0}\",\"KeyColumnCount\":1}]}"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "GeographyKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "GeographyKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "GeographyKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "City",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "City"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "City",
+            "sourceProviderType": "nvarchar(30)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StateProvinceCode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "StateProvinceCode"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "StateProvinceCode",
+            "sourceProviderType": "nvarchar(3)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StateProvinceName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "StateProvinceName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "StateProvinceName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CountryRegionCode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "CountryRegionCode"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "CountryRegionCode",
+            "sourceProviderType": "nvarchar(3)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EnglishCountryRegionName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "EnglishCountryRegionName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "EnglishCountryRegionName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SpanishCountryRegionName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SpanishCountryRegionName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "SpanishCountryRegionName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FrenchCountryRegionName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FrenchCountryRegionName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "FrenchCountryRegionName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PostalCode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "PostalCode"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "PostalCode",
+            "sourceProviderType": "nvarchar(15)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SalesTerritoryKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SalesTerritoryKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "SalesTerritoryKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "IpAddressLocator",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "IpAddressLocator"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "IpAddressLocator",
+            "sourceProviderType": "nvarchar(15)",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimGeography-0415633b-ce46-43c0-b928-8c19a11d7c4f",
+            "mode": "directQuery",
+            "source": {
+              "dataSource": "b448e40d-68b7-45c5-ac2e-ad997f57eff3",
+              "query": [
+                "select [$Table].[GeographyKey] as [GeographyKey],",
+                "    [$Table].[City] as [City],",
+                "    [$Table].[StateProvinceCode] as [StateProvinceCode],",
+                "    [$Table].[StateProvinceName] as [StateProvinceName],",
+                "    [$Table].[CountryRegionCode] as [CountryRegionCode],",
+                "    [$Table].[EnglishCountryRegionName] as [EnglishCountryRegionName],",
+                "    [$Table].[SpanishCountryRegionName] as [SpanishCountryRegionName],",
+                "    [$Table].[FrenchCountryRegionName] as [FrenchCountryRegionName],",
+                "    [$Table].[PostalCode] as [PostalCode],",
+                "    [$Table].[SalesTerritoryKey] as [SalesTerritoryKey],",
+                "    [$Table].[IpAddressLocator] as [IpAddressLocator]",
+                "from [dbo].[DimGeography] as [$Table]"
+              ],
+              "type": "query"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimProduct",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "54a5d20e-c563-4492-9888-7d9711cacf92"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "DimProduct"
+          },
+          {
+            "name": "PBI_QueryRelationships",
+            "value": "{\"columnCount\":36,\"keyColumnNames\":[\"ProductKey\"],\"queryRelationships\":[{\"keyColumnCount\":1,\"keyColumn\":2,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{ProductSubcategoryKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{ProductKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactProductInventory.{ProductKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactResellerSales.{ProductKey,0}\",\"KeyColumnCount\":1}],\"columnIdentities\":[\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ProductKey,0}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ProductAlternateKey,1}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ProductSubcategoryKey,2}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{WeightUnitMeasureCode,3}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{SizeUnitMeasureCode,4}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{EnglishProductName,5}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{SpanishProductName,6}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{FrenchProductName,7}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{StandardCost,8}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{FinishedGoodsFlag,9}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{Color,10}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{SafetyStockLevel,11}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ReorderPoint,12}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ListPrice,13}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{Size,14}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{SizeRange,15}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{Weight,16}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{DaysToManufacture,17}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ProductLine,18}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{DealerPrice,19}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{Class,20}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{Style,21}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ModelName,22}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{LargePhoto,23}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{EnglishDescription,24}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{FrenchDescription,25}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ChineseDescription,26}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ArabicDescription,27}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{HebrewDescription,28}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ThaiDescription,29}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{GermanDescription,30}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{JapaneseDescription,31}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{TurkishDescription,32}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{StartDate,33}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{EndDate,34}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{Status,35}\"],\"ColumnCount\":36,\"KeyColumnNames\":[\"ProductKey\"],\"ColumnIdentities\":[\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ProductKey,0}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ProductAlternateKey,1}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ProductSubcategoryKey,2}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{WeightUnitMeasureCode,3}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{SizeUnitMeasureCode,4}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{EnglishProductName,5}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{SpanishProductName,6}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{FrenchProductName,7}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{StandardCost,8}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{FinishedGoodsFlag,9}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{Color,10}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{SafetyStockLevel,11}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ReorderPoint,12}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ListPrice,13}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{Size,14}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{SizeRange,15}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{Weight,16}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{DaysToManufacture,17}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ProductLine,18}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{DealerPrice,19}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{Class,20}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{Style,21}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ModelName,22}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{LargePhoto,23}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{EnglishDescription,24}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{FrenchDescription,25}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ChineseDescription,26}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ArabicDescription,27}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{HebrewDescription,28}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ThaiDescription,29}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{GermanDescription,30}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{JapaneseDescription,31}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{TurkishDescription,32}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{StartDate,33}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{EndDate,34}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{Status,35}\"],\"RelationshipInfo\":[{\"keyColumnCount\":1,\"keyColumn\":2,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{ProductSubcategoryKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{ProductKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactProductInventory.{ProductKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactResellerSales.{ProductKey,0}\",\"KeyColumnCount\":1}]}"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ProductKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ProductKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "ProductKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductAlternateKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ProductAlternateKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "ProductAlternateKey",
+            "sourceProviderType": "nvarchar(25)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductSubcategoryKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ProductSubcategoryKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "ProductSubcategoryKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "WeightUnitMeasureCode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "WeightUnitMeasureCode"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "WeightUnitMeasureCode",
+            "sourceProviderType": "nchar",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SizeUnitMeasureCode",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SizeUnitMeasureCode"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "SizeUnitMeasureCode",
+            "sourceProviderType": "nchar",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EnglishProductName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "EnglishProductName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "EnglishProductName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SpanishProductName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SpanishProductName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "SpanishProductName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FrenchProductName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FrenchProductName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "FrenchProductName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StandardCost",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "StandardCost"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "sourceColumn": "StandardCost",
+            "sourceProviderType": "money",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "FinishedGoodsFlag",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Boolean\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Boolean#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FinishedGoodsFlag"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "boolean",
+            "formatString": "\"TRUE\";\"TRUE\";\"FALSE\"",
+            "isNullable": false,
+            "sourceColumn": "FinishedGoodsFlag",
+            "sourceProviderType": "bit",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Color",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Color"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "Color",
+            "sourceProviderType": "nvarchar(15)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SafetyStockLevel",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SafetyStockLevel"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "SafetyStockLevel",
+            "sourceProviderType": "smallint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ReorderPoint",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ReorderPoint"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "ReorderPoint",
+            "sourceProviderType": "smallint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ListPrice",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ListPrice"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "sourceColumn": "ListPrice",
+            "sourceProviderType": "money",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Size",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Size"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Size",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SizeRange",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SizeRange"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "SizeRange",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Weight",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Weight"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "double",
+            "sourceColumn": "Weight",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DaysToManufacture",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "DaysToManufacture"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "DaysToManufacture",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ProductLine",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ProductLine"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "ProductLine",
+            "sourceProviderType": "nchar",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DealerPrice",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "DealerPrice"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "sourceColumn": "DealerPrice",
+            "sourceProviderType": "money",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Class",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Class"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Class",
+            "sourceProviderType": "nchar",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Style",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Style"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Style",
+            "sourceProviderType": "nchar",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ModelName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ModelName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "ModelName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EnglishDescription",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "EnglishDescription"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "EnglishDescription",
+            "sourceProviderType": "nvarchar(400)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FrenchDescription",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FrenchDescription"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "FrenchDescription",
+            "sourceProviderType": "nvarchar(400)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ChineseDescription",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ChineseDescription"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "ChineseDescription",
+            "sourceProviderType": "nvarchar(400)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ArabicDescription",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ArabicDescription"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "ArabicDescription",
+            "sourceProviderType": "nvarchar(400)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "HebrewDescription",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "HebrewDescription"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "HebrewDescription",
+            "sourceProviderType": "nvarchar(400)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ThaiDescription",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ThaiDescription"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "ThaiDescription",
+            "sourceProviderType": "nvarchar(400)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "GermanDescription",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "GermanDescription"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "GermanDescription",
+            "sourceProviderType": "nvarchar(400)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "JapaneseDescription",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "JapaneseDescription"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "JapaneseDescription",
+            "sourceProviderType": "nvarchar(400)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TurkishDescription",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "TurkishDescription"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "TurkishDescription",
+            "sourceProviderType": "nvarchar(400)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "StartDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "StartDate"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "sourceColumn": "StartDate",
+            "sourceProviderType": "datetime",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EndDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "EndDate"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "sourceColumn": "EndDate",
+            "sourceProviderType": "datetime",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Status"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "Status",
+            "sourceProviderType": "nvarchar(7)",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimProduct-0fc3024f-8b00-4dd4-8c09-53ee62dc0d33",
+            "mode": "directQuery",
+            "source": {
+              "dataSource": "b448e40d-68b7-45c5-ac2e-ad997f57eff3",
+              "query": [
+                "select [$Table].[ProductKey] as [ProductKey],",
+                "    [$Table].[ProductAlternateKey] as [ProductAlternateKey],",
+                "    [$Table].[ProductSubcategoryKey] as [ProductSubcategoryKey],",
+                "    [$Table].[WeightUnitMeasureCode] as [WeightUnitMeasureCode],",
+                "    [$Table].[SizeUnitMeasureCode] as [SizeUnitMeasureCode],",
+                "    [$Table].[EnglishProductName] as [EnglishProductName],",
+                "    [$Table].[SpanishProductName] as [SpanishProductName],",
+                "    [$Table].[FrenchProductName] as [FrenchProductName],",
+                "    [$Table].[StandardCost] as [StandardCost],",
+                "    [$Table].[FinishedGoodsFlag] as [FinishedGoodsFlag],",
+                "    [$Table].[Color] as [Color],",
+                "    [$Table].[SafetyStockLevel] as [SafetyStockLevel],",
+                "    [$Table].[ReorderPoint] as [ReorderPoint],",
+                "    [$Table].[ListPrice] as [ListPrice],",
+                "    [$Table].[Size] as [Size],",
+                "    [$Table].[SizeRange] as [SizeRange],",
+                "    [$Table].[Weight] as [Weight],",
+                "    [$Table].[DaysToManufacture] as [DaysToManufacture],",
+                "    [$Table].[ProductLine] as [ProductLine],",
+                "    [$Table].[DealerPrice] as [DealerPrice],",
+                "    [$Table].[Class] as [Class],",
+                "    [$Table].[Style] as [Style],",
+                "    [$Table].[ModelName] as [ModelName],",
+                "    [$Table].[LargePhoto] as [LargePhoto],",
+                "    [$Table].[EnglishDescription] as [EnglishDescription],",
+                "    [$Table].[FrenchDescription] as [FrenchDescription],",
+                "    [$Table].[ChineseDescription] as [ChineseDescription],",
+                "    [$Table].[ArabicDescription] as [ArabicDescription],",
+                "    [$Table].[HebrewDescription] as [HebrewDescription],",
+                "    [$Table].[ThaiDescription] as [ThaiDescription],",
+                "    [$Table].[GermanDescription] as [GermanDescription],",
+                "    [$Table].[JapaneseDescription] as [JapaneseDescription],",
+                "    [$Table].[TurkishDescription] as [TurkishDescription],",
+                "    [$Table].[StartDate] as [StartDate],",
+                "    [$Table].[EndDate] as [EndDate],",
+                "    [$Table].[Status] as [Status]",
+                "from [dbo].[DimProduct] as [$Table]"
+              ],
+              "type": "query"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimProductSubcategory",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "7506f851-5132-4503-b326-cf270183236b"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "DimProductSubcategory"
+          },
+          {
+            "name": "PBI_QueryRelationships",
+            "value": "{\"columnCount\":6,\"keyColumnNames\":[\"ProductSubcategoryKey\"],\"queryRelationships\":[{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ProductSubcategoryKey,2}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":5,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductCategory.{ProductCategoryKey,0}\",\"KeyColumnCount\":1}],\"columnIdentities\":[\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{ProductSubcategoryKey,0}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{ProductSubcategoryAlternateKey,1}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{EnglishProductSubcategoryName,2}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{SpanishProductSubcategoryName,3}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{FrenchProductSubcategoryName,4}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{ProductCategoryKey,5}\"],\"ColumnCount\":6,\"KeyColumnNames\":[\"ProductSubcategoryKey\"],\"ColumnIdentities\":[\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{ProductSubcategoryKey,0}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{ProductSubcategoryAlternateKey,1}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{EnglishProductSubcategoryName,2}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{SpanishProductSubcategoryName,3}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{FrenchProductSubcategoryName,4}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{ProductCategoryKey,5}\"],\"RelationshipInfo\":[{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ProductSubcategoryKey,2}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":5,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductCategory.{ProductCategoryKey,0}\",\"KeyColumnCount\":1}]}"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ProductSubcategoryKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ProductSubcategoryKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "ProductSubcategoryKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductSubcategoryAlternateKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ProductSubcategoryAlternateKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "ProductSubcategoryAlternateKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "EnglishProductSubcategoryName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "EnglishProductSubcategoryName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "EnglishProductSubcategoryName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SpanishProductSubcategoryName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SpanishProductSubcategoryName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "SpanishProductSubcategoryName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FrenchProductSubcategoryName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FrenchProductSubcategoryName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "FrenchProductSubcategoryName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductCategoryKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ProductCategoryKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "ProductCategoryKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimProductSubcategory-a051b099-9b25-454a-b967-171802ef5dc0",
+            "mode": "directQuery",
+            "source": {
+              "dataSource": "b448e40d-68b7-45c5-ac2e-ad997f57eff3",
+              "query": [
+                "select [$Table].[ProductSubcategoryKey] as [ProductSubcategoryKey],",
+                "    [$Table].[ProductSubcategoryAlternateKey] as [ProductSubcategoryAlternateKey],",
+                "    [$Table].[EnglishProductSubcategoryName] as [EnglishProductSubcategoryName],",
+                "    [$Table].[SpanishProductSubcategoryName] as [SpanishProductSubcategoryName],",
+                "    [$Table].[FrenchProductSubcategoryName] as [FrenchProductSubcategoryName],",
+                "    [$Table].[ProductCategoryKey] as [ProductCategoryKey]",
+                "from [dbo].[DimProductSubcategory] as [$Table]"
+              ],
+              "type": "query"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DimProductCategory",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "1a78bb4a-415c-464d-a528-af6b8da38066"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "DimProductCategory"
+          },
+          {
+            "name": "PBI_QueryRelationships",
+            "value": "{\"columnCount\":5,\"keyColumnNames\":[\"ProductCategoryKey\"],\"queryRelationships\":[{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{ProductCategoryKey,5}\",\"KeyColumnCount\":1}],\"columnIdentities\":[\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductCategory.{ProductCategoryKey,0}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductCategory.{ProductCategoryAlternateKey,1}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductCategory.{EnglishProductCategoryName,2}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductCategory.{SpanishProductCategoryName,3}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductCategory.{FrenchProductCategoryName,4}\"],\"ColumnCount\":5,\"KeyColumnNames\":[\"ProductCategoryKey\"],\"ColumnIdentities\":[\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductCategory.{ProductCategoryKey,0}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductCategory.{ProductCategoryAlternateKey,1}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductCategory.{EnglishProductCategoryName,2}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductCategory.{SpanishProductCategoryName,3}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductCategory.{FrenchProductCategoryName,4}\"],\"RelationshipInfo\":[{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProductSubcategory.{ProductCategoryKey,5}\",\"KeyColumnCount\":1}]}"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ProductCategoryKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ProductCategoryKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "ProductCategoryKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ProductCategoryAlternateKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ProductCategoryAlternateKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "sourceColumn": "ProductCategoryAlternateKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "EnglishProductCategoryName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "EnglishProductCategoryName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "EnglishProductCategoryName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SpanishProductCategoryName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SpanishProductCategoryName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "SpanishProductCategoryName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "FrenchProductCategoryName",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "FrenchProductCategoryName"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "FrenchProductCategoryName",
+            "sourceProviderType": "nvarchar(50)",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "DimProductCategory-09c52d8f-f3fe-44aa-8fa3-bdf852213cdf",
+            "mode": "directQuery",
+            "source": {
+              "dataSource": "b448e40d-68b7-45c5-ac2e-ad997f57eff3",
+              "query": [
+                "select [$Table].[ProductCategoryKey] as [ProductCategoryKey],",
+                "    [$Table].[ProductCategoryAlternateKey] as [ProductCategoryAlternateKey],",
+                "    [$Table].[EnglishProductCategoryName] as [EnglishProductCategoryName],",
+                "    [$Table].[SpanishProductCategoryName] as [SpanishProductCategoryName],",
+                "    [$Table].[FrenchProductCategoryName] as [FrenchProductCategoryName]",
+                "from [dbo].[DimProductCategory] as [$Table]"
+              ],
+              "type": "query"
+            }
+          }
+        ]
+      },
+      {
+        "name": "FactInternetSales",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "356af453-e8a2-4cea-b5d0-e27bcf7cc4af"
+          },
+          {
+            "name": "LinkedQueryName",
+            "value": "FactInternetSales"
+          },
+          {
+            "name": "PBI_QueryRelationships",
+            "value": "{\"columnCount\":26,\"keyColumnNames\":[\"SalesOrderNumber\",\"SalesOrderLineNumber\"],\"queryRelationships\":[{\"keyColumnCount\":1,\"keyColumn\":6,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCurrency.{CurrencyKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":4,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{CustomerKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":2,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{DateKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":1,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{DateKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":3,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{DateKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ProductKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":5,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimPromotion.{PromotionKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":7,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimSalesTerritory.{SalesTerritoryKey,0}\",\"KeyColumnCount\":1}],\"columnIdentities\":[\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{ProductKey,0}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{OrderDateKey,1}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{DueDateKey,2}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{ShipDateKey,3}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{CustomerKey,4}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{PromotionKey,5}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{CurrencyKey,6}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{SalesTerritoryKey,7}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{SalesOrderNumber,8}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{SalesOrderLineNumber,9}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{RevisionNumber,10}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{OrderQuantity,11}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{UnitPrice,12}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{ExtendedAmount,13}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{UnitPriceDiscountPct,14}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{DiscountAmount,15}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{ProductStandardCost,16}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{TotalProductCost,17}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{SalesAmount,18}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{TaxAmt,19}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{Freight,20}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{CarrierTrackingNumber,21}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{CustomerPONumber,22}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{OrderDate,23}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{DueDate,24}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{ShipDate,25}\"],\"ColumnCount\":26,\"KeyColumnNames\":[\"SalesOrderNumber\",\"SalesOrderLineNumber\"],\"ColumnIdentities\":[\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{ProductKey,0}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{OrderDateKey,1}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{DueDateKey,2}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{ShipDateKey,3}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{CustomerKey,4}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{PromotionKey,5}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{CurrencyKey,6}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{SalesTerritoryKey,7}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{SalesOrderNumber,8}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{SalesOrderLineNumber,9}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{RevisionNumber,10}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{OrderQuantity,11}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{UnitPrice,12}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{ExtendedAmount,13}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{UnitPriceDiscountPct,14}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{DiscountAmount,15}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{ProductStandardCost,16}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{TotalProductCost,17}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{SalesAmount,18}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{TaxAmt,19}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{Freight,20}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{CarrierTrackingNumber,21}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{CustomerPONumber,22}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{OrderDate,23}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{DueDate,24}\",\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/FactInternetSales.{ShipDate,25}\"],\"RelationshipInfo\":[{\"keyColumnCount\":1,\"keyColumn\":6,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCurrency.{CurrencyKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":4,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimCustomer.{CustomerKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":2,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{DateKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":1,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{DateKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":3,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimDate.{DateKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimProduct.{ProductKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":5,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimPromotion.{PromotionKey,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":7,\"otherKeyColumnIdentity\":\"Server.Database\\\\/2/SQL/jxkt4xphz2.database.windows.net;Adventure Works DW Tabular Denali CTP3/dbo/DimSalesTerritory.{SalesTerritoryKey,0}\",\"KeyColumnCount\":1}]}"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "ProductKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ProductKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "ProductKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OrderDateKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "OrderDateKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "OrderDateKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "DueDateKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "DueDateKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "DueDateKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ShipDateKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ShipDateKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "ShipDateKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "CustomerKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "CustomerKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "CustomerKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PromotionKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "PromotionKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "PromotionKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "CurrencyKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "CurrencyKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "CurrencyKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "SalesTerritoryKey",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SalesTerritoryKey"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "SalesTerritoryKey",
+            "sourceProviderType": "int",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "SalesOrderNumber",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SalesOrderNumber"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "sourceColumn": "SalesOrderNumber",
+            "sourceProviderType": "nvarchar(20)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "SalesOrderLineNumber",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SalesOrderLineNumber"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "SalesOrderLineNumber",
+            "sourceProviderType": "tinyint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "RevisionNumber",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "RevisionNumber"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "RevisionNumber",
+            "sourceProviderType": "tinyint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "OrderQuantity",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Int64#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "OrderQuantity"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isNullable": false,
+            "sourceColumn": "OrderQuantity",
+            "sourceProviderType": "smallint",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "UnitPrice",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "UnitPrice"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "isNullable": false,
+            "sourceColumn": "UnitPrice",
+            "sourceProviderType": "money",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ExtendedAmount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ExtendedAmount"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "isNullable": false,
+            "sourceColumn": "ExtendedAmount",
+            "sourceProviderType": "money",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "UnitPriceDiscountPct",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "UnitPriceDiscountPct"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "double",
+            "isNullable": false,
+            "sourceColumn": "UnitPriceDiscountPct",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "DiscountAmount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"General\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Double#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "DiscountAmount"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "double",
+            "isNullable": false,
+            "sourceColumn": "DiscountAmount",
+            "sourceProviderType": "float",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ProductStandardCost",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ProductStandardCost"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "isNullable": false,
+            "sourceColumn": "ProductStandardCost",
+            "sourceProviderType": "money",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TotalProductCost",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "TotalProductCost"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "isNullable": false,
+            "sourceColumn": "TotalProductCost",
+            "sourceProviderType": "money",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "SalesAmount",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "SalesAmount"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "isNullable": false,
+            "sourceColumn": "SalesAmount",
+            "sourceProviderType": "money",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "TaxAmt",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "TaxAmt"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "isNullable": false,
+            "sourceColumn": "TaxAmt",
+            "sourceProviderType": "money",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Freight",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"CurrencyGeneral\" ThousandSeparator=\"True\"><Currency LCID=\"1033\" DisplayName=\"$ English (United States)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"0\" /></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "Decimal#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "Freight"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "decimal",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "isNullable": false,
+            "sourceColumn": "Freight",
+            "sourceProviderType": "money",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CarrierTrackingNumber",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "CarrierTrackingNumber"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "CarrierTrackingNumber",
+            "sourceProviderType": "nvarchar(25)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CustomerPONumber",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"Text\" />"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "String#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "CustomerPONumber"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "string",
+            "sourceColumn": "CustomerPONumber",
+            "sourceProviderType": "nvarchar(25)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "OrderDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "OrderDate"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "sourceColumn": "OrderDate",
+            "sourceProviderType": "datetime",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DueDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "DueDate"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "sourceColumn": "DueDate",
+            "sourceProviderType": "datetime",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ShipDate",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "Format",
+                "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+              },
+              {
+                "name": "DataTypeAtRefresh",
+                "value": "DateTime#####not a type"
+              },
+              {
+                "name": "PBI_NameAtRefresh",
+                "value": "ShipDate"
+              },
+              {
+                "name": "PBI_WasHiddenAtRefresh",
+                "value": "False"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "sourceColumn": "ShipDate",
+            "sourceProviderType": "datetime",
+            "summarizeBy": "none"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FactInternetSales-c17af76a-0036-499d-9589-f1b3f2ca4d55",
+            "mode": "directQuery",
+            "source": {
+              "dataSource": "b448e40d-68b7-45c5-ac2e-ad997f57eff3",
+              "query": [
+                "select [$Table].[ProductKey] as [ProductKey],",
+                "    [$Table].[OrderDateKey] as [OrderDateKey],",
+                "    [$Table].[DueDateKey] as [DueDateKey],",
+                "    [$Table].[ShipDateKey] as [ShipDateKey],",
+                "    [$Table].[CustomerKey] as [CustomerKey],",
+                "    [$Table].[PromotionKey] as [PromotionKey],",
+                "    [$Table].[CurrencyKey] as [CurrencyKey],",
+                "    [$Table].[SalesTerritoryKey] as [SalesTerritoryKey],",
+                "    [$Table].[SalesOrderNumber] as [SalesOrderNumber],",
+                "    [$Table].[SalesOrderLineNumber] as [SalesOrderLineNumber],",
+                "    [$Table].[RevisionNumber] as [RevisionNumber],",
+                "    [$Table].[OrderQuantity] as [OrderQuantity],",
+                "    [$Table].[UnitPrice] as [UnitPrice],",
+                "    [$Table].[ExtendedAmount] as [ExtendedAmount],",
+                "    [$Table].[UnitPriceDiscountPct] as [UnitPriceDiscountPct],",
+                "    [$Table].[DiscountAmount] as [DiscountAmount],",
+                "    [$Table].[ProductStandardCost] as [ProductStandardCost],",
+                "    [$Table].[TotalProductCost] as [TotalProductCost],",
+                "    [$Table].[SalesAmount] as [SalesAmount],",
+                "    [$Table].[TaxAmt] as [TaxAmt],",
+                "    [$Table].[Freight] as [Freight],",
+                "    [$Table].[CarrierTrackingNumber] as [CarrierTrackingNumber],",
+                "    [$Table].[CustomerPONumber] as [CustomerPONumber],",
+                "    [$Table].[OrderDate] as [OrderDate],",
+                "    [$Table].[DueDate] as [DueDate],",
+                "    [$Table].[ShipDate] as [ShipDate]",
+                "from [dbo].[FactInternetSales] as [$Table]"
+              ],
+              "type": "query"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
