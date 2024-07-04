@@ -11,14 +11,16 @@
 
 # CELL ********************
 
-# Welcome to your new notebook
-# Type here in the cell editor to add code!
-# fsdfsdfs
+# MAGIC %%spark
+# MAGIC # Welcome to your new notebook
+# MAGIC # Type here in the cell editor to add code!
+# MAGIC # fsdfsdfs  
+
 
 # METADATA ********************
 
 # META {
-# META   "language": "python",
+# META   "language": "scala",
 # META   "language_group": "synapse_pyspark"
 # META }
 
