@@ -1,0 +1,28 @@
+{
+  "name": "CY17SU10",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "*": [
+          {
+            "wordWrap": true
+          }
+        ],
+        "wordWrap": [
+          {
+            "show": true
+          }
+        ]
+      }
+    },
+    "scatterChart": {
+      "*": {
+        "fillPoint": [
+          {
+            "show": true
+          }
+        ]
+      }
+    }
+  }
+}

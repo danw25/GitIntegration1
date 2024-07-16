@@ -1,5 +1,5 @@
 {
-  "name": "CY19SU06",
+  "name": "CY19SU12",
   "dataColors": [
     "#118DFF",
     "#12239E",
@@ -104,7 +104,7 @@
         ],
         "title": [
           {
-            "wordWrap": "true"
+            "titleWrap": true
           }
         ],
         "lineStyles": [
@@ -251,6 +251,15 @@
             "outlineWeight": 2,
             "barShow": true,
             "barWeight": 2
+          }
+        ]
+      }
+    },
+    "kpi": {
+      "*": {
+        "trendline": [
+          {
+            "transparency": 20
           }
         ]
       }

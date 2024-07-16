@@ -1,0 +1,82 @@
+{
+  "config": "{\"version\":\"5.37\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY17SU10\",\"version\":\"3.18\",\"type\":2}},\"activeSectionIndex\":0,\"linguisticSchemaSyncVersion\":0}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY17SU10",
+            "path": "BaseThemes/CY17SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "Capture156546247516254.JPG",
+            "path": "Capture156546247516254.JPG",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"28ecee87cf20a00041f6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":215.88138385502472,\"y\":347.5453047775947,\"z\":4000,\"width\":901.4827018121911,\"height\":345.17298187808893}}],\"singleVisual\":{\"visualType\":\"textbox\",\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"ServerName:  \\\"pbiotestdb.database.windows.net\\\" meta [IsParameterQuery=true, Type=\\\"Text\\\", IsParameterQueryRequired=true]\"}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"MaxId: 10000 meta [IsParameterQuery=true, Type=\\\"Number\\\", IsParameterQueryRequired=true]\"}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"BinParam: \\\"ggt%423$$57%dfdfcdfhdh\\\" meta [IsParameterQuery=true, Type=\\\"Binary\\\", IsParameterQueryRequired=true]\"}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"AnyParam: \\\"uu63\\\" meta [IsParameterQuery=true, Type=\\\"Any\\\", IsParameterQueryRequired=true]\"}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"DateParam: #datetime(2002, 2, 8, 0, 0, 0) meta [IsParameterQuery=true, List={#datetime(2000, 1, 1, 0, 0, 0), #datetime(2002, 2, 8, 0, 0, 0), #datetime(2003, 12, 8, 0, 0, 0), #datetime(2007, 7, 9, 0, 0, 0)}, DefaultValue=#datetime(2000, 1, 1, 0, 0, 0), Type=\\\"DateTime\\\", IsParameterQueryRequired=true]\"}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"StrParam:  \\\"Hello\\\" meta [IsParameterQuery=true, Type=\\\"Text\\\", IsParameterQueryRequired=false]\"}]},{\"textRuns\":[{\"value\":\"\"}]},{\"textRuns\":[{\"value\":\"BoolParam: true meta [IsParameterQuery=true, List={true, false}, DefaultValue=true, Type=\\\"Logical\\\", IsParameterQueryRequired=true]\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 345.17,
+          "width": 901.48,
+          "x": 215.88,
+          "y": 347.55,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"8d7e00e1ce8cbe5fa6f8\",\"layouts\":[{\"id\":0,\"position\":{\"x\":300,\"y\":20,\"width\":280,\"height\":280,\"z\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(DateTimeZoneParam.DateTimeZoneParam)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DateTimeZoneParam\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"DateTimeZoneParam\"}},\"Function\":3},\"Name\":\"Min(DateTimeZoneParam.DateTimeZoneParam)\"}]}}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 300.00,
+          "y": 20.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"9b559d65c933f9bc0700\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":20,\"width\":280,\"height\":280,\"z\":0}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"Table1.asasasas\",\"active\":true}],\"Y\":[{\"queryRef\":\"CountNonNull(Table1.asasasas)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"t\",\"Entity\":\"Table1NoParams\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"asasasas\"},\"Name\":\"Table1.asasasas\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"t\"}},\"Property\":\"asasasas\"}},\"Function\":5},\"Name\":\"CountNonNull(Table1.asasasas)\"}]}}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 20.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"b8266bd2ec140b2856e1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":652.3887973640857,\"y\":56.935749588138385,\"z\":3000,\"width\":279.9341021416804,\"height\":279.9341021416804}}],\"singleVisual\":{\"visualType\":\"image\",\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"Capture156546247516254.JPG\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 279.93,
+          "width": 279.93,
+          "x": 652.39,
+          "y": 56.94,
+          "z": 3000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
