@@ -2,7 +2,7 @@
   "version": "4.0",
   "datasetReference": {
     "byPath": {
-      "path": "../DQ RLS.SemanticModel"
+      "path": "../All visual types v3.SemanticModel"
     },
     "byConnection": null
   }
