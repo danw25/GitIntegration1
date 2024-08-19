@@ -1,0 +1,29 @@
+{
+  "eTagOfMetadataFile": "",
+  "eTagOfMashupFile": "",
+  "computeEngineSettings": {},
+  "editingSessionMashup": {
+    "mashupName": "fede4e1f-8b71-4d0f-8c3a-46505aca88c7",
+    "mashupDocument": "section Section1;",
+    "queryGroups": [],
+    "documentLocale": "en-US",
+    "queriesMetadata": {},
+    "connectionOverrides": [],
+    "fastCombine": false,
+    "allowNativeQueries": true,
+    "hostContext": {
+      "type": "TridentDataflowNative",
+      "details": {
+        "capacityObjectId": "F545372A-2156-41F2-9888-8BCB7520EC94",
+        "metadataClientType": "PowerBI",
+        "metadataProviderType": "PowerBI",
+        "workspaceObjectId": "18441522-3434-4a42-8c66-d24cd3546eb1"
+      }
+    },
+    "hostProperties": {
+      "dataflowRefreshOutputFileFormat": "Parquet",
+      "enableDateTimeFieldsForStaging": "true",
+      "enablePublishWithoutLoadedQueries": "true"
+    }
+  }
+}
