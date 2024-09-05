@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "InMemory2"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ebf9e139-9f58-449a-abee-2c8e43528b95"
+  }
+}
