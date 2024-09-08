@@ -1,5 +1,5 @@
 {
-  "name": "CY19SU06",
+  "name": "CY23SU04",
   "dataColors": [
     "#118DFF",
     "#12239E",
@@ -86,14 +86,29 @@
       "*": {
         "*": [
           {
-            "transparency": 0,
             "wordWrap": true
+          }
+        ],
+        "line": [
+          {
+            "transparency": 0
+          }
+        ],
+        "outline": [
+          {
+            "transparency": 0
+          }
+        ],
+        "plotArea": [
+          {
+            "transparency": 0
           }
         ],
         "categoryAxis": [
           {
             "showAxisTitle": true,
-            "gridlineStyle": "dotted"
+            "gridlineStyle": "dotted",
+            "concatenateLabels": false
           }
         ],
         "valueAxis": [
@@ -102,9 +117,14 @@
             "gridlineStyle": "dotted"
           }
         ],
+        "y2Axis": [
+          {
+            "show": true
+          }
+        ],
         "title": [
           {
-            "wordWrap": "true"
+            "titleWrap": true
           }
         ],
         "lineStyles": [
@@ -128,11 +148,6 @@
             "backgroundColor": {
               "solid": {
                 "color": "#ffffff"
-              }
-            },
-            "foregroundColor": {
-              "solid": {
-                "color": "#252423"
               }
             },
             "transparency": 0,
@@ -184,6 +199,11 @@
           {
             "show": true
           }
+        ],
+        "legend": [
+          {
+            "showGradientLegend": true
+          }
         ]
       }
     },
@@ -193,6 +213,12 @@
           {
             "responsive": true
           }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
         ]
       }
     },
@@ -201,6 +227,23 @@
         "bubbles": [
           {
             "bubbleSize": -10
+          }
+        ]
+      }
+    },
+    "azureMap": {
+      "*": {
+        "bubbleLayer": [
+          {
+            "bubbleRadius": 8,
+            "minBubbleRadius": 8,
+            "maxRadius": 40
+          }
+        ],
+        "barChart": [
+          {
+            "barHeight": 3,
+            "thickness": 3
           }
         ]
       }
@@ -255,11 +298,31 @@
         ]
       }
     },
+    "kpi": {
+      "*": {
+        "trendline": [
+          {
+            "transparency": 20
+          }
+        ]
+      }
+    },
     "slicer": {
       "*": {
         "general": [
           {
             "responsive": true
+          }
+        ],
+        "date": [
+          {
+            "hideDatePickerButton": false
+          }
+        ],
+        "items": [
+          {
+            "padding": 4,
+            "accessibilityContrastProperties": true
           }
         ]
       }
@@ -279,6 +342,17 @@
           {
             "responsive": true
           }
+        ],
+        "legend": [
+          {
+            "showGradientLegend": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
         ]
       }
     },
@@ -287,6 +361,17 @@
         "general": [
           {
             "responsive": true
+          }
+        ],
+        "legend": [
+          {
+            "showGradientLegend": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
           }
         ]
       }
@@ -297,6 +382,17 @@
           {
             "responsive": true
           }
+        ],
+        "legend": [
+          {
+            "showGradientLegend": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
         ]
       }
     },
@@ -305,6 +401,17 @@
         "general": [
           {
             "responsive": true
+          }
+        ],
+        "legend": [
+          {
+            "showGradientLegend": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
           }
         ]
       }
@@ -315,6 +422,17 @@
           {
             "responsive": true
           }
+        ],
+        "legend": [
+          {
+            "showGradientLegend": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
         ]
       }
     },
@@ -323,6 +441,17 @@
         "general": [
           {
             "responsive": true
+          }
+        ],
+        "legend": [
+          {
+            "showGradientLegend": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
           }
         ]
       }
@@ -333,6 +462,12 @@
           {
             "responsive": true
           }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
         ]
       }
     },
@@ -341,6 +476,12 @@
         "general": [
           {
             "responsive": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
           }
         ]
       }
@@ -351,6 +492,12 @@
           {
             "responsive": true
           }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
+          }
         ]
       }
     },
@@ -359,6 +506,12 @@
         "general": [
           {
             "responsive": true
+          }
+        ],
+        "smallMultiplesLayout": [
+          {
+            "backgroundTransparency": 0,
+            "gridLineType": "inner"
           }
         ]
       }
@@ -387,12 +540,112 @@
           {
             "show": false
           }
+        ],
+        "general": [
+          {
+            "keepLayerOrder": true
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "shape": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "general": [
+          {
+            "keepLayerOrder": true
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
         ]
       }
     },
     "image": {
       "*": {
         "background": [
+          {
+            "show": false
+          }
+        ],
+        "general": [
+          {
+            "keepLayerOrder": true
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ],
+        "lockAspect": [
+          {
+            "show": true
+          }
+        ]
+      }
+    },
+    "actionButton": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "pageNavigator": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "bookmarkNavigator": {
+      "*": {
+        "background": [
+          {
+            "show": false
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "textbox": {
+      "*": {
+        "general": [
+          {
+            "keepLayerOrder": true
+          }
+        ],
+        "visualHeader": [
           {
             "show": false
           }
