@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "APP_PIC_Menu"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "99ba11d5-e366-49cd-830a-80339ad30983"
+  }
+}

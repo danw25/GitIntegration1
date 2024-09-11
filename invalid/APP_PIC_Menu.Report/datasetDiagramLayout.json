@@ -1,0 +1,750 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 1912
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 2273.6715713851963
+          },
+          "nodeIndex": "D_AGENTE_GEST_CART_PBI_VIEW",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 791.013735649815,
+            "y": 2109.3437750584658
+          },
+          "nodeIndex": "D_PESSOA_PBI_VIEW",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 408.06788091792328,
+            "y": 1934.72699339636
+          },
+          "nodeIndex": "D_REL_CLIENTE_PESSOA_PBI_VIEW",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1094.343263956313,
+            "y": 1635.2758941405427
+          },
+          "nodeIndex": "FP_A_BALANCOS_PBI_VIEW",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2001.7606664408613,
+            "y": 1905.9521730458737
+          },
+          "nodeIndex": "FP_D_COR_RATING_PBI_VIEW",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 171.35810690120377,
+            "y": 1924.7244280496473
+          },
+          "nodeIndex": "FP_M_RAROC_ACUM_PBI_VIEW",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1220.8866473143912,
+            "y": 1252.4585619380287
+          },
+          "nodeIndex": "FP_M_RESP_BDP_RESUMO_PBI_VIEW",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 382.94585473189181,
+            "y": 2572.1570699682511
+          },
+          "nodeIndex": "MCC_VETOR_PIC_PBI_VIEW",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 83.699944507192868,
+            "y": 1131.2837878557998
+          },
+          "nodeIndex": "A_GLOBAL_PESSOA_DEVCRED",
+          "nodeLineageTag": "3f53d110-5b6f-461f-b130-4cafc47201ca",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4025.1207540605637,
+            "y": 3394.3402210079857
+          },
+          "nodeIndex": "AnoFin",
+          "nodeLineageTag": "6d78f302-5030-4ea7-8167-04ca66981b54",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 6822.3321612590089,
+            "y": 3430.3402210079857
+          },
+          "nodeIndex": "Calc Group Incumprimento",
+          "nodeLineageTag": "af7cf728-9e87-4561-a6da-115dd81454da",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7221.9337908587868,
+            "y": 3430.3402210079857
+          },
+          "nodeIndex": "Calculations",
+          "nodeLineageTag": "d88b94c4-129f-4982-8260-3a01fc26fe17",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 763.72279650773339,
+            "y": 474.06788091792305
+          },
+          "nodeIndex": "CONCEITO_PIC_PBI_VIEW",
+          "nodeLineageTag": "de68b0ff-f61d-4e6d-8196-bf2f6e442b3e",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 90.129991644617348,
+            "y": 1455.4477199775915
+          },
+          "nodeIndex": "D_ARV_PRODUTO_CONCEITO_VIEW",
+          "nodeLineageTag": "b70c0741-7692-4610-93e7-20606dc77185",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1145.2506303725584,
+            "y": 996.67251957978806
+          },
+          "nodeIndex": "D_BDP_PRODUTO_PBI_VIEW",
+          "nodeLineageTag": "9282a3cc-d0cf-4c78-a26d-082b08c8e0bf",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2001.7606664408613,
+            "y": 1647.8063993268549
+          },
+          "nodeIndex": "D_BDP_RESUMO_PERIOD",
+          "nodeLineageTag": "d930edbb-bc86-4beb-9547-7f38197cb5e9",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1529.6365065342768,
+            "y": 1201.6356356425822
+          },
+          "nodeIndex": "D_BDP_TIPO_GARANTIA_PBI_VIEW",
+          "nodeLineageTag": "ebe92212-c3f0-4eac-aad7-7aff7b0738b5",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2190.1628634705849,
+            "y": 2861.014020520734
+          },
+          "nodeIndex": "D_CLASSE_RISCO_PBI_VIEW",
+          "nodeLineageTag": "1f5c7798-996e-4070-8137-6ee5020df2fa",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2024.8442051123716,
+            "y": 451.005366872213
+          },
+          "nodeIndex": "D_CONF_BDP_RUB_SIT_CRED_PBI",
+          "nodeLineageTag": "fdd60b26-4a6f-4d1a-99ac-d492af8d435d",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1458.0796031503994,
+            "y": 912.25791732174457
+          },
+          "nodeIndex": "D_CONF_BDP_RUBTOT_SIT_CRED_PBI",
+          "nodeLineageTag": "e9c5439c-acd9-4956-9d60-711ea4d96d32",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 975.23924777650973,
+            "y": 0
+          },
+          "nodeIndex": "D_COR_PESSOA_ACC_PART_VIEW",
+          "nodeLineageTag": "2f339da9-426d-484a-804f-fd3de3189332",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1610.5784738256057,
+            "y": 2695.0782905658034
+          },
+          "nodeIndex": "D_COR_RATINGROLE_VIEW",
+          "nodeLineageTag": "4381496a-66a5-442f-9016-065f7862a1a2",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 395.24214118330781,
+            "y": 808.11316358158092
+          },
+          "nodeIndex": "D_COR_TIP_PESSOA_PBI_VIEW",
+          "nodeLineageTag": "3b01c114-f9c4-4cdb-a9a1-966e33dea8c6",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 405.13073555169524,
+            "y": 1110.181044499504
+          },
+          "nodeIndex": "D_DBP_SIT_CREDITO_PBI_VIEW",
+          "nodeLineageTag": "c6fa6738-89bc-47d1-afe4-af88e22a5148",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 795.24127820570493,
+            "y": 1424.8375332792475
+          },
+          "nodeIndex": "D_DIA_PBI_VIEW",
+          "nodeLineageTag": "d5be3f45-ba69-491e-9d47-09f396749290",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 357.77917343921797,
+            "y": 2272.6757018799144
+          },
+          "nodeIndex": "D_GRP_ECONOMICO_PBI_VIEW",
+          "nodeLineageTag": "4e99b481-2461-4328-8254-92dcb5d1e957",
+          "size": {
+            "height": 272,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2018.6463547435289,
+            "y": 2297.7979376124313
+          },
+          "nodeIndex": "D_INFO_QUALITATIVA",
+          "nodeLineageTag": "1be9d58b-c97a-460f-999c-95ce43645e8a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1082.4490124983008,
+            "y": 3057.4795368943123
+          },
+          "nodeIndex": "D_PESSOA_TIP_GAR_PBI_VIEW",
+          "nodeLineageTag": "24b4ad70-29ce-4e67-b6e9-5c7d2ef55b85",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5223.9256428598974,
+            "y": 3406.3402210079857
+          },
+          "nodeIndex": "D_TIPOCLIENTE_CONFIG_VIEW",
+          "nodeLineageTag": "ae151936-65d3-47fd-818e-3c89212e1866",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4424.7223836603416,
+            "y": 3394.3402210079857
+          },
+          "nodeIndex": "Formato Numero",
+          "nodeLineageTag": "9b0df12b-c937-4776-9cf1-47bb614f2262",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 813.1986164696184,
+            "y": 948.1357618358461
+          },
+          "nodeIndex": "FP_M_GLOBAL_PBI_VIEW",
+          "nodeLineageTag": "c9e4c923-cb93-4b2a-82a5-4cea577beb88",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 491.76782542511603,
+            "y": 1422.2036427537694
+          },
+          "nodeIndex": "FP_M_GLOBAL_SALDOS_PBI_VIEW",
+          "nodeLineageTag": "098c3f97-3c17-4f3a-a6c9-c9b4151d46d3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1610.5784738256057,
+            "y": 2047.1706254511364
+          },
+          "nodeIndex": "FP_M_REEMBOLSOS_PASS_PBI_VIEW",
+          "nodeLineageTag": "c1971f20-61a4-4276-9e65-651412adc31e",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 816.13576183584632,
+            "y": 1798.2514522487452
+          },
+          "nodeIndex": "FP_M_REEMBOLSOS_PBI_VIEW",
+          "nodeLineageTag": "8d37b82d-ac76-4995-9c52-57515d77125b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1202.5105929076826,
+            "y": 2109.3437750584658
+          },
+          "nodeIndex": "FP_M_REEMBOLSOS_TOT_PBI_VIEW",
+          "nodeLineageTag": "a2e78910-24db-4102-96d1-5731091e7c7d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2426.7142356614522,
+            "y": 2386.9461396028109
+          },
+          "nodeIndex": "FP_M_SINAIS_ALERTA",
+          "nodeLineageTag": "ba51e760-c69e-452a-bebf-ba4e8f32114f",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1215.8130484746773,
+            "y": 2583.4116559763888
+          },
+          "nodeIndex": "HIERAR_EE_BANCARIO_PBI_VIEW",
+          "nodeLineageTag": "79d72deb-825d-428e-91c0-1356fe26a679",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 791.013735649815,
+            "y": 2674.251432989759
+          },
+          "nodeIndex": "Images_CDPME",
+          "nodeLineageTag": "21fb6f08-c474-4268-973c-0f87ddac5748",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1610.5784738256057,
+            "y": 2501.9516474274897
+          },
+          "nodeIndex": "Images_CDPME_CV",
+          "nodeLineageTag": "d90bb9cf-ebed-4cd4-907b-c5dabed65a94",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2426.7142356614522,
+            "y": 1999.5129249696149
+          },
+          "nodeIndex": "Images_cotec",
+          "nodeLineageTag": "69247cc7-710a-4de0-82cf-28ea6d9c1504",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 7621.5354204585647,
+            "y": 3430.3402210079857
+          },
+          "nodeIndex": "Info Financeira",
+          "nodeLineageTag": "96854054-cf58-479d-bad2-d1a7357a29bd",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8021.1370500583425,
+            "y": 3430.3402210079857
+          },
+          "nodeIndex": "Metrics_Balanco",
+          "nodeLineageTag": "0686890c-ed1b-427f-ac20-57d0c1748cf9",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 5623.5272724596753,
+            "y": 3406.3402210079857
+          },
+          "nodeIndex": "NOVA_INSTANCIA",
+          "nodeLineageTag": "d84129a4-cc0e-4ba9-b8eb-321d194b0251",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3625.5191244607859,
+            "y": 3362.8161754004077
+          },
+          "nodeIndex": "PARAM_CRBP_HIST",
+          "nodeLineageTag": "ecefe27d-e62f-4c38-a8ab-e9e4056c8368",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3225.917494861008,
+            "y": 3299.7680841852516
+          },
+          "nodeIndex": "PARAM_NB_HIST",
+          "nodeLineageTag": "8667b04c-5735-4a8a-b261-ebc7f064942c",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4824.3240132601195,
+            "y": 3394.3402210079857
+          },
+          "nodeIndex": "PARAM_PAGINADOS_PIC_VIEW",
+          "nodeLineageTag": "765278f0-b767-4144-bdc5-a3a14e9b39fd",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1593.6927855229383,
+            "y": 1584.647833692969
+          },
+          "nodeIndex": "PIC_FP_D_RATING_VW",
+          "nodeLineageTag": "6f6d6c0e-85fc-4cc1-b69a-a4700a60ad26",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2038.305104306334,
+            "y": 1297.7385184089317
+          },
+          "nodeIndex": "PRESTACAO_BDP",
+          "nodeLineageTag": "9879e3bd-9b45-46df-9de9-53e551a89dc4",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1866.1474840683227,
+            "y": 825.07324779013607
+          },
+          "nodeIndex": "Produto",
+          "nodeLineageTag": "eeeaab95-35c6-4dce-85f6-acc5964290e0",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8420.7386796581213,
+            "y": 3430.3402210079857
+          },
+          "nodeIndex": "Visao_Incumprimento",
+          "nodeLineageTag": "d551f039-a97e-490c-894c-387ea23a3403",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8704.7386796581213,
+            "y": 0
+          },
+          "nodeIndex": "PARAM_FR",
+          "nodeLineageTag": "59c1c582-7eeb-4568-94c0-e92ce7a793d7",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 8988.7386796581213,
+            "y": 0
+          },
+          "nodeIndex": "PIC_FP_D_EARLY_WARNINGS_VW",
+          "nodeLineageTag": "f548fafa-ef59-4f25-bf4e-0e5d6fd5d5d8",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9272.7386796581213,
+            "y": 0
+          },
+          "nodeIndex": "FP_A_BAL_FIN_PBI_VIEW",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10402.55379787594,
+            "y": 98
+          },
+          "nodeIndex": "FP_M_RESP_BDP_PBI_VIEW",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 9649.3437190640616,
+            "y": 86
+          },
+          "nodeIndex": "PIC_METRICAS_INF_FIN_VIEW",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10779.158837281881,
+            "y": 98
+          },
+          "nodeIndex": "Sheet1",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 10025.94875847,
+            "y": 86
+          },
+          "nodeIndex": "Table",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
