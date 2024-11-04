@@ -1,0 +1,16 @@
+relationship eac8c5fd-101b-4dff-955d-3ce16415eadd
+	fromColumn: FactInternetSales.OrderDate
+	toColumn: DimDate.FullDateAlternateKey
+
+relationship 39d9878a-63c9-404f-a4ef-dd5cb904a778
+	fromColumn: FactInternetSales.ProductKey
+	toColumn: DimProduct.ProductKey
+
+relationship dda541bb-1f0e-48bc-b851-c9e3fe9dc2b2
+	fromColumn: FactInternetSales.CustomerKey
+	toColumn: DimCustomer.CustomerKey
+
+relationship 794a760b-729e-466d-bc9e-ebc742ea846c
+	fromColumn: DimCustomer.GeographyKey
+	toColumn: DimGeography.GeographyKey
+

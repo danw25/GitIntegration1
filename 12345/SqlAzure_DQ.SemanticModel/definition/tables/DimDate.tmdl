@@ -1,0 +1,199 @@
+table DimDate
+	lineageTag: 08460332-ae7b-4e9b-b0cb-eaa657d7485d
+
+	column DateKey
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: dd7cd503-c300-4d93-bfa9-d21bf9f67182
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column FullDateAlternateKey
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 07066068-15ee-4591-8c00-2ef524d5ce99
+		summarizeBy: none
+		sourceColumn: FullDateAlternateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayNumberOfWeek
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: ca9c46b2-0718-4d88-9648-584c2083a7b6
+		summarizeBy: none
+		sourceColumn: DayNumberOfWeek
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnglishDayNameOfWeek
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 03bcc77b-42b3-4b73-b739-ff685dea151e
+		summarizeBy: none
+		sourceColumn: EnglishDayNameOfWeek
+
+		annotation SummarizationSetBy = Automatic
+
+	column SpanishDayNameOfWeek
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: ad3c1c68-9ac8-46cd-9aff-3df96d64fa4b
+		summarizeBy: none
+		sourceColumn: SpanishDayNameOfWeek
+
+		annotation SummarizationSetBy = Automatic
+
+	column FrenchDayNameOfWeek
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: faf792ee-8052-4a29-a8f7-515a245c235a
+		summarizeBy: none
+		sourceColumn: FrenchDayNameOfWeek
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayNumberOfMonth
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 321c7555-f1f9-476e-abde-2b336ee31c32
+		summarizeBy: none
+		sourceColumn: DayNumberOfMonth
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayNumberOfYear
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 4f6d633f-1385-45a2-b777-65ca00590ef5
+		summarizeBy: none
+		sourceColumn: DayNumberOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column WeekNumberOfYear
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 773197fb-8ce5-4841-82b9-ae755bbabce8
+		summarizeBy: none
+		sourceColumn: WeekNumberOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnglishMonthName
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 5c82430b-afc9-4656-8b2c-d9dbeec232e4
+		summarizeBy: none
+		sourceColumn: EnglishMonthName
+
+		annotation SummarizationSetBy = Automatic
+
+	column SpanishMonthName
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 3bfb9aed-80f9-47c1-960b-f2ead2aab98e
+		summarizeBy: none
+		sourceColumn: SpanishMonthName
+
+		annotation SummarizationSetBy = Automatic
+
+	column FrenchMonthName
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: fb3e5071-6112-44bd-b57a-0689caa928bd
+		summarizeBy: none
+		sourceColumn: FrenchMonthName
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNumberOfYear
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 8b156309-6438-47db-b851-1da2a0e74391
+		summarizeBy: none
+		sourceColumn: MonthNumberOfYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column CalendarQuarter
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: e8e21993-2046-492b-9bcb-03649793aa57
+		summarizeBy: none
+		sourceColumn: CalendarQuarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column CalendarYear
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: a64cb6fe-5524-4ae2-8264-b1822b48db98
+		summarizeBy: none
+		sourceColumn: CalendarYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column CalendarSemester
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: d7cc5b89-f450-4ec4-9db5-b0b09b9071c3
+		summarizeBy: none
+		sourceColumn: CalendarSemester
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalQuarter
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 784beb12-6209-4794-8bb8-e2875bbc148c
+		summarizeBy: none
+		sourceColumn: FiscalQuarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalYear
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 73e0060e-b5eb-4b0e-bbfa-10523bc95663
+		summarizeBy: none
+		sourceColumn: FiscalYear
+
+		annotation SummarizationSetBy = Automatic
+
+	column FiscalSemester
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: f1aa9fda-6384-4481-b2c9-2a04d060dc1e
+		summarizeBy: none
+		sourceColumn: FiscalSemester
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimDate-3b65ecf2-79ae-45fe-9337-9350c377341f = m
+		mode: directQuery
+		source =
+				let
+				    Source = Sql.Databases("jxkt4xphz2.database.windows.net"),
+				    #"Adventure Works DW Tabular Denali CTP3" = Source{[Name="Adventure Works DW Tabular Denali CTP3"]}[Data],
+				    dbo_DimDate = #"Adventure Works DW Tabular Denali CTP3"{[Schema="dbo",Item="DimDate"]}[Data]
+				in
+				    dbo_DimDate
+
+	annotation PBI_ResultType = Table
+

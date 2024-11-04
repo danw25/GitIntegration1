@@ -1,0 +1,286 @@
+table DimCustomer
+	lineageTag: 2cbeb117-6e73-4e87-a094-0774b5914de7
+
+	column CustomerKey
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 1661af8b-6945-45fc-9405-c8088a21799d
+		summarizeBy: none
+		sourceColumn: CustomerKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column GeographyKey
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 2766f292-b0bf-4f91-82a8-26ae2dd1ab54
+		summarizeBy: none
+		sourceColumn: GeographyKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerAlternateKey
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: a04fcd7d-cda3-4f01-a054-fde0f1515e38
+		summarizeBy: none
+		sourceColumn: CustomerAlternateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Title
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: c1b46dbd-a8bc-4911-9079-4bedaf40c578
+		summarizeBy: none
+		sourceColumn: Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column FirstName
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: cce15b66-4808-4ee7-b317-4e5a20aea6d1
+		summarizeBy: none
+		sourceColumn: FirstName
+
+		annotation SummarizationSetBy = Automatic
+
+	column MiddleName
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: af283e99-aa3f-424e-92de-2faf8c355eba
+		summarizeBy: none
+		sourceColumn: MiddleName
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastName
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: efd609d2-8900-4c3d-bb49-962247c68c39
+		summarizeBy: none
+		sourceColumn: LastName
+
+		annotation SummarizationSetBy = Automatic
+
+	column NameStyle
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		sourceProviderType: bit
+		lineageTag: aea01513-dbbe-41f4-80b5-43009b58ed6b
+		summarizeBy: none
+		sourceColumn: NameStyle
+
+		annotation SummarizationSetBy = Automatic
+
+	column BirthDate
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: ed14ba5a-55f5-4d44-8f44-09ba0984cee2
+		summarizeBy: none
+		sourceColumn: BirthDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column MaritalStatus
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: f54746c7-f86d-4294-846a-d07a89b86e0f
+		summarizeBy: none
+		sourceColumn: MaritalStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column Suffix
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 63570a4d-6a6e-4cd0-a5c0-3e912a3d0745
+		summarizeBy: none
+		sourceColumn: Suffix
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gender
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: ec6645f0-9a1e-415b-a68f-ba1e6c16faf7
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmailAddress
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 89019aa8-9500-4133-b54c-02821fe76d41
+		summarizeBy: none
+		sourceColumn: EmailAddress
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearlyIncome
+		dataType: double
+		sourceProviderType: decimal(19, 4)
+		lineageTag: 996c2fbe-02f0-4c1a-bb4b-835d2232cf9d
+		summarizeBy: sum
+		sourceColumn: YearlyIncome
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TotalChildren
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 99abb6a1-02b5-4b96-9576-ee33f84d5054
+		summarizeBy: sum
+		sourceColumn: TotalChildren
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumberChildrenAtHome
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: d85ca35e-930a-45d6-bb29-b0cd439f7690
+		summarizeBy: sum
+		sourceColumn: NumberChildrenAtHome
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnglishEducation
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: a0e09610-9e26-4646-8270-aaafb11e76f2
+		summarizeBy: none
+		sourceColumn: EnglishEducation
+
+		annotation SummarizationSetBy = Automatic
+
+	column SpanishEducation
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: cd125835-cb8a-4f46-af35-7efa9f62d06f
+		summarizeBy: none
+		sourceColumn: SpanishEducation
+
+		annotation SummarizationSetBy = Automatic
+
+	column FrenchEducation
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: be51276a-7a2e-4d4e-a5ec-8fee17cafb6e
+		summarizeBy: none
+		sourceColumn: FrenchEducation
+
+		annotation SummarizationSetBy = Automatic
+
+	column EnglishOccupation
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 1fb57b4f-075a-4ebb-8d59-eaba239b1306
+		summarizeBy: none
+		sourceColumn: EnglishOccupation
+
+		annotation SummarizationSetBy = Automatic
+
+	column SpanishOccupation
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 23f751e4-12a9-4e8d-bd79-74fc84d497e2
+		summarizeBy: none
+		sourceColumn: SpanishOccupation
+
+		annotation SummarizationSetBy = Automatic
+
+	column FrenchOccupation
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 8f93ee09-8fae-40b6-b710-1be0345337e0
+		summarizeBy: none
+		sourceColumn: FrenchOccupation
+
+		annotation SummarizationSetBy = Automatic
+
+	column HouseOwnerFlag
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 4f80b49c-e04d-4d45-a598-24a512f38c58
+		summarizeBy: none
+		sourceColumn: HouseOwnerFlag
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumberCarsOwned
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 5b1942b8-ad11-4ef3-be49-fc17ea641877
+		summarizeBy: sum
+		sourceColumn: NumberCarsOwned
+
+		annotation SummarizationSetBy = Automatic
+
+	column AddressLine1
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 827c03c9-7dd5-4c25-b70a-3732ab4c1aea
+		summarizeBy: none
+		sourceColumn: AddressLine1
+
+		annotation SummarizationSetBy = Automatic
+
+	column AddressLine2
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: 4cab4663-c1af-4c9d-9865-725a6866781d
+		summarizeBy: none
+		sourceColumn: AddressLine2
+
+		annotation SummarizationSetBy = Automatic
+
+	column Phone
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: fe0053c0-a301-4230-be1a-908574f5ba42
+		summarizeBy: none
+		sourceColumn: Phone
+
+		annotation SummarizationSetBy = Automatic
+
+	column DateFirstPurchase
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 6fe96d9b-f6c2-4864-a024-f8c0122ea4c4
+		summarizeBy: none
+		sourceColumn: DateFirstPurchase
+
+		annotation SummarizationSetBy = Automatic
+
+	column CommuteDistance
+		dataType: string
+		sourceProviderType: nvarchar(max)
+		lineageTag: cf090368-e196-4b15-b9ab-b8bd928d7227
+		summarizeBy: none
+		sourceColumn: CommuteDistance
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimCustomer-ef6782b3-aa48-4ca1-b926-2a36263c555e = m
+		mode: directQuery
+		source =
+				let
+				    Source = Sql.Databases("jxkt4xphz2.database.windows.net"),
+				    #"Adventure Works DW Tabular Denali CTP3" = Source{[Name="Adventure Works DW Tabular Denali CTP3"]}[Data],
+				    dbo_DimCustomer = #"Adventure Works DW Tabular Denali CTP3"{[Schema="dbo",Item="DimCustomer"]}[Data]
+				in
+				    dbo_DimCustomer
+
+	annotation PBI_ResultType = Table
+
