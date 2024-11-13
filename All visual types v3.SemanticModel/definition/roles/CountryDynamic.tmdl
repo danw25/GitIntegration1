@@ -1,0 +1,7 @@
+role CountryDynamic
+	modelPermission: read
+
+	tablePermission DimGeography = [EnglishCountryRegionName]=username()
+
+	annotation PBI_Id = bc75e4bc18ad4321a586aad8cac5dff0
+

@@ -1,0 +1,7 @@
+role OccupationClerical
+	modelPermission: read
+
+	tablePermission DimCustomer = [EnglishOccupation] = "Clerical"
+
+	annotation PBI_Id = dc0f8c0e54d24018b8b4a125f9a69d93
+

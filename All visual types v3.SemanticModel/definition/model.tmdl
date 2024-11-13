@@ -1,0 +1,35 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.106.883.0 (22.06)
+
+annotation PBI_QueryOrder = ["DimDate","DimCustomer","DimGeography","DimProduct","FactInternetSales"]
+
+ref table DimDate
+ref table DateTableTemplate_a43d1fb2-8f11-4842-9737-f9ba1982bde0
+ref table LocalDateTable_08380878-06fb-40ac-b9c1-32a2404655a3
+ref table DimCustomer
+ref table LocalDateTable_deb18ac5-5d02-419d-92fd-8194c7b60f12
+ref table LocalDateTable_1bb65491-1efc-4a80-b132-68f1d0f640c7
+ref table DimGeography
+ref table DimProduct
+ref table LocalDateTable_1db11f1b-7c46-44ac-881d-2ada39f03695
+ref table LocalDateTable_ff0d8a9b-66e0-43e6-ba91-27c98afe20c8
+ref table FactInternetSales
+ref table LocalDateTable_dbdbac77-5df8-4abd-9b70-211596a6852d
+ref table LocalDateTable_6a4732fc-676a-4d8c-8974-fa76cea0aaaf
+ref table LocalDateTable_41066069-c630-42ba-8b0e-07b913c40f11
+
+ref role CountryDynamic
+ref role OccupationClerical
+ref role OccupationManual
+
+ref cultureInfo en-US
+
