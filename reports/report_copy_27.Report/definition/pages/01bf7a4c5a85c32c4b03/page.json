@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "01bf7a4c5a85c32c4b03",
+  "displayName": "Page 9",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}

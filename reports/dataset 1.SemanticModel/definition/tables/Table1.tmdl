@@ -1,0 +1,44 @@
+table Table1
+	lineageTag: 4f0f8885-6eaf-4099-bff1-385c3e25cb95
+
+	column TIMESTAMP
+		dataType: string
+		lineageTag: 7e688b51-3436-4e51-b9d3-c55c934d5cc5
+		summarizeBy: none
+		sourceColumn: TIMESTAMP
+
+		annotation SummarizationSetBy = Automatic
+
+	column EventText
+		dataType: string
+		lineageTag: caebc852-5eca-401f-ac73-04bf710779d8
+		summarizeBy: none
+		sourceColumn: EventText
+
+		annotation SummarizationSetBy = Automatic
+
+	column ActivityType
+		dataType: string
+		lineageTag: 52a5dd52-7f6a-4cd4-9682-5ed4a6a4cc71
+		summarizeBy: none
+		sourceColumn: ActivityType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Level
+		dataType: string
+		lineageTag: 436aceb4-a1db-42af-a465-b8319da8a6fb
+		summarizeBy: none
+		sourceColumn: Level
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Table1 = m
+		mode: import
+		source =
+				let
+				  Source = Excel.Workbook(Web.Contents("https://microsofteur-my.sharepoint.com/personal/danweinstein_microsoft_com/Documents/Apps/Microsoft Power Query/Uploaded Files/RAID traces.xlsx"), null, true),
+				  #"Navigation 1" = Source{[Item = "Table1", Kind = "Table"]}[Data]
+				in
+				  #"Navigation 1"
+

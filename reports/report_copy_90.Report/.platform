@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "report_copy_90"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "c52fe9b8-d1cf-4d71-888c-c127908f4e72"
+  }
+}
