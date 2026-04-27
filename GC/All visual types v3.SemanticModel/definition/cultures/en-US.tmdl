@@ -1,0 +1,1891 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "DynamicImprovement": "HighConfidence",
+			  "Entities": {
+			    "dim_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim date": {}
+			        },
+			        {
+			          "which date is it": {}
+			        }
+			      ]
+			    },
+			    "dim_date.calendar_quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "CalendarQuarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendar quarter": {}
+			        }
+			      ]
+			    },
+			    "dim_date.calendar_semester": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "CalendarSemester"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendar semester": {}
+			        }
+			      ]
+			    },
+			    "dim_date.calendar_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "CalendarYear"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendar year": {}
+			        }
+			      ]
+			    },
+			    "dim_date.date_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "DateKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date key": {}
+			        }
+			      ]
+			    },
+			    "dim_date.day_number_of_month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "DayNumberOfMonth"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day number of month": {}
+			        }
+			      ]
+			    },
+			    "dim_date.day_number_of_week": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "DayNumberOfWeek"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day number of week": {}
+			        }
+			      ]
+			    },
+			    "dim_date.day_number_of_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "DayNumberOfYear"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day number of year": {}
+			        }
+			      ]
+			    },
+			    "dim_date.english_day_name_of_week": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "EnglishDayNameOfWeek"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "english day name of week": {}
+			        },
+			        {
+			          "on which day": {}
+			        }
+			      ]
+			    },
+			    "dim_date.english_month_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "EnglishMonthName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "english month name": {}
+			        },
+			        {
+			          "on which month was": {}
+			        }
+			      ]
+			    },
+			    "dim_date.fiscal_quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "FiscalQuarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fiscal quarter": {}
+			        },
+			        {
+			          "quarter information": {}
+			        },
+			        {
+			          "which quarter": {}
+			        }
+			      ]
+			    },
+			    "dim_date.fiscal_semester": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "FiscalSemester"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fiscal semester": {}
+			        }
+			      ]
+			    },
+			    "dim_date.fiscal_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "FiscalYear"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fiscal year": {}
+			        }
+			      ]
+			    },
+			    "dim_date.french_day_name_of_week": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "FrenchDayNameOfWeek"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "french day name of week": {}
+			        }
+			      ]
+			    },
+			    "dim_date.french_month_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "FrenchMonthName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "french month name": {}
+			        }
+			      ]
+			    },
+			    "dim_date.full_date_alternate_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "FullDateAlternateKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "full date alternate key": {}
+			        }
+			      ]
+			    },
+			    "dim_date.month_number_of_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "MonthNumberOfYear"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month number of year": {}
+			        }
+			      ]
+			    },
+			    "dim_date.spanish_day_name_of_week": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "SpanishDayNameOfWeek"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "spanish day name of week": {}
+			        }
+			      ]
+			    },
+			    "dim_date.spanish_month_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "SpanishMonthName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "spanish month name": {}
+			        }
+			      ]
+			    },
+			    "dim_date.week_number_of_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimDate",
+			          "ConceptualProperty": "WeekNumberOfYear"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "week number of year": {}
+			        }
+			      ]
+			    },
+			    "dim_product": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim product": {}
+			        }
+			      ]
+			    },
+			    "dim_product.arabic_description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "ArabicDescription"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "arabic description": {}
+			        }
+			      ]
+			    },
+			    "dim_product.chinese_description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "ChineseDescription"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chinese description": {}
+			        }
+			      ]
+			    },
+			    "dim_product.class": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "Class"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "class": {}
+			        },
+			        {
+			          "how is the product classified": {}
+			        }
+			      ]
+			    },
+			    "dim_product.color": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "Color"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "color": {}
+			        }
+			      ]
+			    },
+			    "dim_product.day_to_manufacture": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "DaysToManufacture"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day to manufacture": {}
+			        }
+			      ]
+			    },
+			    "dim_product.dealer_price": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "DealerPrice"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dealer price": {}
+			        }
+			      ]
+			    },
+			    "dim_product.end_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "EndDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "end date": {}
+			        }
+			      ]
+			    },
+			    "dim_product.english_description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "EnglishDescription"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "english description": {}
+			        },
+			        {
+			          "description of product": {}
+			        },
+			        {
+			          "product information": {}
+			        }
+			      ]
+			    },
+			    "dim_product.english_product_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "EnglishProductName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "english product name": {}
+			        },
+			        {
+			          "what product": {}
+			        },
+			        {
+			          "which product is": {}
+			        }
+			      ]
+			    },
+			    "dim_product.finished_goods_flag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "FinishedGoodsFlag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "finished goods flag": {}
+			        }
+			      ]
+			    },
+			    "dim_product.french_description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "FrenchDescription"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "french description": {}
+			        }
+			      ]
+			    },
+			    "dim_product.french_product_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "FrenchProductName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "french product name": {}
+			        }
+			      ]
+			    },
+			    "dim_product.german_description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "GermanDescription"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "german description": {}
+			        }
+			      ]
+			    },
+			    "dim_product.hebrew_description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "HebrewDescription"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hebrew description": {}
+			        }
+			      ]
+			    },
+			    "dim_product.japanese_description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "JapaneseDescription"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "japanese description": {}
+			        },
+			        {
+			          "sore wa nan desuka": {}
+			        }
+			      ]
+			    },
+			    "dim_product.list_price": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "ListPrice"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "list price": {}
+			        }
+			      ]
+			    },
+			    "dim_product.model_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "ModelName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "model name": {}
+			        },
+			        {
+			          "what is the name of the product model": {}
+			        }
+			      ]
+			    },
+			    "dim_product.product_alternate_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "ProductAlternateKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "product alternate key": {}
+			        }
+			      ]
+			    },
+			    "dim_product.product_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "ProductKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "product key": {}
+			        },
+			        {
+			          "key of product": {}
+			        }
+			      ]
+			    },
+			    "dim_product.product_line": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "ProductLine"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "product line": {}
+			        },
+			        {
+			          "which line is the product from": {}
+			        }
+			      ]
+			    },
+			    "dim_product.product_subcategory_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "ProductSubcategoryKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "product subcategory key": {}
+			        }
+			      ]
+			    },
+			    "dim_product.reorder_point": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "ReorderPoint"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "reorder point": {}
+			        }
+			      ]
+			    },
+			    "dim_product.safety_stock_level": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "SafetyStockLevel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "safety stock level": {}
+			        }
+			      ]
+			    },
+			    "dim_product.size": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "Size"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "size": {}
+			        },
+			        {
+			          "how big is the product": {}
+			        }
+			      ]
+			    },
+			    "dim_product.size_range": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "SizeRange"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "size range": {}
+			        }
+			      ]
+			    },
+			    "dim_product.size_unit_measure_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "SizeUnitMeasureCode"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "size unit measure code": {}
+			        }
+			      ]
+			    },
+			    "dim_product.spanish_product_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "SpanishProductName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "spanish product name": {}
+			        }
+			      ]
+			    },
+			    "dim_product.standard_cost": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "StandardCost"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "standard cost": {}
+			        }
+			      ]
+			    },
+			    "dim_product.start_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "StartDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "start date": {}
+			        }
+			      ]
+			    },
+			    "dim_product.status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status": {}
+			        }
+			      ]
+			    },
+			    "dim_product.style": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "Style"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "style": {}
+			        }
+			      ]
+			    },
+			    "dim_product.thai_description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "ThaiDescription"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "thai description": {}
+			        }
+			      ]
+			    },
+			    "dim_product.turkish_description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "TurkishDescription"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turkish description": {}
+			        }
+			      ]
+			    },
+			    "dim_product.weight": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "Weight"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "weight": {}
+			        }
+			      ]
+			    },
+			    "dim_product.weight_unit_measure_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimProduct",
+			          "ConceptualProperty": "WeightUnitMeasureCode"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "weight unit measure code": {}
+			        },
+			        {
+			          "which measure units are used": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fact internet sale": {}
+			        },
+			        {
+			          "sales information": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.carrier_tracking_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "CarrierTrackingNumber"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "carrier tracking number": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.currency_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "CurrencyKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "currency key": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.customer_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "CustomerKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "customer key": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.customer_PO_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "CustomerPONumber"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "customer PO number": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.discount_amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "DiscountAmount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "discount amount": {}
+			        },
+			        {
+			          "how much was the discount": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.due_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "DueDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "due date": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.due_date_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "DueDateKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "due date key": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.extended_amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "ExtendedAmount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "extended amount": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.freight": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "Freight"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "freight": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.order_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "OrderDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "order date": {}
+			        },
+			        {
+			          "on which date it was ordered": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.order_date_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "OrderDateKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "order date key": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.order_quantity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "OrderQuantity"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "order quantity": {}
+			        },
+			        {
+			          "how many orders were": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.product_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "ProductKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "product key": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.product_standard_cost": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "ProductStandardCost"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "product standard cost": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.promotion_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "PromotionKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "promotion key": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.revision_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "RevisionNumber"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "revision number": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.sales_amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "SalesAmount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sales amount": {}
+			        },
+			        {
+			          "how much money": {}
+			        },
+			        {
+			          "how much money did it make": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.sales_order_line_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "SalesOrderLineNumber"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sales order line number": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.sales_order_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "SalesOrderNumber"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sales order number": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.sales_territory_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "SalesTerritoryKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sales territory key": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.ship_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "ShipDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ship date": {}
+			        },
+			        {
+			          "when was it shipped": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.ship_date_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "ShipDateKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ship date key": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.tax_amt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "TaxAmt"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tax amt": {}
+			        },
+			        {
+			          "how much tax": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.total_product_cost": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "TotalProductCost"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total product cost": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.unit_price": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "UnitPrice"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unit price": {}
+			        },
+			        {
+			          "how much does a unit cost": {}
+			        }
+			      ]
+			    },
+			    "fact_internet_sale.unit_price_discount_pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInternetSales",
+			          "ConceptualProperty": "UnitPriceDiscountPct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unit price discount pct": {}
+			        }
+			      ]
+			    },
+			    "dim_customer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim customer": {}
+			        },
+			        {
+			          "Customer information": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.address_line_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "AddressLine1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "address line 1": {}
+			        },
+			        {
+			          "where do they live": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.address_line_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "AddressLine2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "address line 2": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.birth_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "BirthDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "birth date": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.commute_distance": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "CommuteDistance"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "commute distance": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.customer_alternate_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "CustomerAlternateKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "customer alternate key": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.customer_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "CustomerKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "customer key": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.date_first_purchase": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "DateFirstPurchase"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date first purchase": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.email_address": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "EmailAddress"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "email address": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.english_education": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "EnglishEducation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "english education": {}
+			        },
+			        {
+			          "what degree do they have": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.english_occupation": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "EnglishOccupation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "english occupation": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.first_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "FirstName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "first name": {}
+			        },
+			        {
+			          "what was the customer called": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.french_education": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "FrenchEducation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "french education": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.french_occupation": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "FrenchOccupation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "french occupation": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.gender": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "Gender"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gender": {}
+			        },
+			        {
+			          "was it a man or a woman": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.geography_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "GeographyKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "geography key": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.house_owner_flag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "HouseOwnerFlag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "house owner flag": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.last_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "LastName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "last name": {}
+			        },
+			        {
+			          "what is the customer's last name": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.marital_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "MaritalStatus"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "marital status": {}
+			        },
+			        {
+			          "are they married or single": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.middle_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "MiddleName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "middle name": {}
+			        },
+			        {
+			          "customer middle name": {}
+			        },
+			        {
+			          "who cares": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.name_style": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "NameStyle"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "name style": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.number_car_owned": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "NumberCarsOwned"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "number car owned": {}
+			        },
+			        {
+			          "are they rich?": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.number_child_at_home": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "NumberChildrenAtHome"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "number child at home": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.phone": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "Phone"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "phone": {}
+			        },
+			        {
+			          "what is there phone number": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.spanish_education": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "SpanishEducation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "spanish education": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.spanish_occupation": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "SpanishOccupation"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "spanish occupation": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.suffix": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "Suffix"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "suffix": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.title": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "Title"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "title": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.total_child": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "TotalChildren"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total child": {}
+			        },
+			        {
+			          "how many children do they have": {}
+			        }
+			      ]
+			    },
+			    "dim_customer.yearly_income": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimCustomer",
+			          "ConceptualProperty": "YearlyIncome"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "yearly income": {}
+			        },
+			        {
+			          "how much do they make": {}
+			        }
+			      ]
+			    },
+			    "dim_geography": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimGeography"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim geography": {}
+			        }
+			      ]
+			    },
+			    "dim_geography.city": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimGeography",
+			          "ConceptualProperty": "City"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "city": {}
+			        }
+			      ]
+			    },
+			    "dim_geography.country_region_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimGeography",
+			          "ConceptualProperty": "CountryRegionCode"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "country region code": {}
+			        }
+			      ]
+			    },
+			    "dim_geography.english_country_region_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimGeography",
+			          "ConceptualProperty": "EnglishCountryRegionName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "english country region name": {}
+			        },
+			        {
+			          "country": {}
+			        },
+			        {
+			          "which country sold": {}
+			        }
+			      ]
+			    },
+			    "dim_geography.french_country_region_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimGeography",
+			          "ConceptualProperty": "FrenchCountryRegionName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "french country region name": {}
+			        }
+			      ]
+			    },
+			    "dim_geography.geography_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimGeography",
+			          "ConceptualProperty": "GeographyKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "geography key": {}
+			        }
+			      ]
+			    },
+			    "dim_geography.ip_address_locator": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimGeography",
+			          "ConceptualProperty": "IpAddressLocator"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ip address locator": {}
+			        }
+			      ]
+			    },
+			    "dim_geography.postal_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimGeography",
+			          "ConceptualProperty": "PostalCode"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "postal code": {}
+			        }
+			      ]
+			    },
+			    "dim_geography.sales_territory_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimGeography",
+			          "ConceptualProperty": "SalesTerritoryKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sales territory key": {}
+			        }
+			      ]
+			    },
+			    "dim_geography.spanish_country_region_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimGeography",
+			          "ConceptualProperty": "SpanishCountryRegionName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "spanish country region name": {}
+			        }
+			      ]
+			    },
+			    "dim_geography.state_province_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimGeography",
+			          "ConceptualProperty": "StateProvinceCode"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "state province code": {}
+			        }
+			      ]
+			    },
+			    "dim_geography.state_province_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "DimGeography",
+			          "ConceptualProperty": "StateProvinceName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "state province name": {}
+			        },
+			        {
+			          "province": {}
+			        }
+			      ]
+			    }
+			  },
+			  "Examples": [
+			    {
+			      "gender OrderQuantity by order date": {}
+			    },
+			    {
+			      "SalesAmount by occupation as pie chart": {}
+			    },
+			    {
+			      "salesamount EnglishCountryRegionName": {}
+			    }
+			  ]
+			}
+		contentType: json
+
